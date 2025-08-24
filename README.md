@@ -6,6 +6,51 @@ A proof-of-concept imitation of Docker, written in 100% Python. Using Kernel Nam
 
 ![](https://pbs.twimg.com/media/CmE8k1qVAAAZrIt.jpg)
 
+## Features
+
+### Docker Emulation
+- **mocker pull**: Download Docker images from public repositories
+- **mocker run**: Execute containers with namespace isolation
+- **mocker images**: List downloaded Docker images
+
+### LinkedIn ETL Pipeline
+- **mocker etl linkedin**: Extract, transform, and load LinkedIn profile data to Excel
+- Ethical scraping with rate limiting
+- Excel and CSV export support
+- Comprehensive data transformation
+
+## LinkedIn ETL Pipeline
+
+This project now includes an end-to-end ETL pipeline for LinkedIn data extraction and Excel export.
+
+```bash
+# Run LinkedIn ETL pipeline
+python mocker.py etl linkedin
+
+# Custom output directory
+python mocker.py etl linkedin --output=my_data
+
+# Specify format
+python mocker.py etl linkedin --format=excel
+```
+
+**Features:**
+- ✅ Extract LinkedIn profile data (demo implementation)
+- ✅ Transform and clean data
+- ✅ Export to Excel (.xlsx) or CSV format
+- ✅ Rate limiting and ethical scraping practices
+- ✅ Comprehensive logging and metadata
+
+**Output includes:**
+- Profile names, job titles, companies
+- Location and experience data
+- Skills and education information
+- Timestamps and metadata
+
+For detailed ETL documentation, see [ETL_README.md](ETL_README.md).
+
+⚠️ **Note**: Current implementation uses demo data. Real LinkedIn scraping requires proper authentication and compliance with Terms of Service.
+
 ## Why?
 
 I keep hearing statements like "Docker is basically just cgroups", "Docker is just chroot on steroids", which is totally incorrect.

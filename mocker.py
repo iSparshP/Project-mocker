@@ -6,6 +6,7 @@ from mocker.base import BaseDockerCommand
 from mocker.pull import PullCommand
 from mocker.images import ImagesCommand
 from mocker.run import RunCommand
+from mocker.etl import ETLCommand
 
 
 if __name__ == '__main__':
@@ -17,6 +18,8 @@ if __name__ == '__main__':
         command = ImagesCommand
     elif arguments['run']:
         command = RunCommand
+    elif arguments['etl']:
+        command = ETLCommand
 
     cls = command(**arguments)
     cls.run(**arguments)

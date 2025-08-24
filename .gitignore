@@ -87,3 +87,9 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# ETL Pipeline temporary/test files
+test_linkedin_data/
+demo_output/
+# Keep only the main demo directory as an example
+# linkedin_demo_data/ - keeping this as the main demo
