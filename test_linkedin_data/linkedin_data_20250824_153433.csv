@@ -1,0 +1,4 @@
+full_name,job_title,company_name,location,years_of_experience,skills_list,education_background,linkedin_profile,data_extracted_at
+John Doe,Software Engineer,Tech Corp,"San Francisco, CA",5,"Python, JavaScript, React","Computer Science, Stanford University",https://linkedin.com/in/johndoe,2025-08-24 15:34:33
+Jane Smith,Data Scientist,Data Analytics Inc,"New York, NY",3,"Python, Machine Learning, SQL","Data Science, MIT",https://linkedin.com/in/janesmith,2025-08-24 15:34:33
+Bob Johnson,Product Manager,Innovation Labs,"Seattle, WA",7,"Product Strategy, Analytics, Leadership","MBA, Harvard Business School",https://linkedin.com/in/bobjohnson,2025-08-24 15:34:33

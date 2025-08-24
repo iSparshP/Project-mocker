@@ -26,12 +26,18 @@ Usage:
   mocker pull <name>[<tag>]
   mocker run <name>
   mocker images
+  mocker etl <type> [--output=<dir>] [--format=<fmt>]
   mocker (-h | --help)
   mocker --version
 
 Options:
   -h --help     Show this screen.
   --version     Show version.
+  --output=<dir>   Output directory for ETL data [default: linkedin_data].
+  --format=<fmt>   Output format: excel, csv [default: excel].
+
+ETL Commands:
+  etl linkedin     Run LinkedIn profile scraping and export to Excel.
 """
 
 _base_dir_ = os.path.join(os.path.expanduser('~'), 'mocker')
